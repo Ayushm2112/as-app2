@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    app:statusBarBackground="@color/design_default_color_background"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/darker_gray"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:subtitleTextColor="@color/design_default_color_background"
+            app:titleMargin="0dp"
+            app:titleTextColor="@color/design_default_color_background" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/cardview_dark_background"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <TextView
+        android:id="@+id/workout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="400sp"
+        android:text="workout"
+        android:textColor="@color/design_default_color_background"
+        android:textColorHint="@color/design_default_color_background"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/findworkout"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140sp"
+        android:layout_marginTop="300sp"
+        android:background="@color/cardview_dark_background"
+        android:onClick="onClickMainActivity"
+
+        android:text=" Check Workout"
+        android:textColor="@color/design_default_color_background"
+        android:textColorHint="@color/design_default_color_background"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/workouttype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200sp"
+        android:background="@color/cardview_dark_background"
+        android:entries="@array/workout_types" />
+
+    <Button
+        android:id="@+id/buttonone"
+        android:layout_width="105dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="300sp"
+        android:layout_marginTop="60sp"
+        android:layout_marginRight="60sp"
+        android:background="@color/cardview_dark_background"
+        android:onClick="buttononeclick"
+        android:text="Check BMI"
+        android:textColor="@color/design_default_color_background"
+        android:textColorHint="@color/design_default_color_background"
+        android:textStyle="bold"
+        app:layout_anchor="@+id/buttonone"
+        app:layout_anchorGravity="center" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

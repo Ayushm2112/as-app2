@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_on_secondary"
+    tools:context=".activitytwo">
+
+    <EditText
+        android:id="@+id/edittext2"
+        android:layout_width="229dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Enter height in M"
+        android:inputType="textPersonName"
+        android:textColor="@color/design_default_color_background"
+        android:textColorHint="@color/design_default_color_background"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext1" />
+
+    <EditText
+        android:id="@+id/edittext1"
+        android:layout_width="232dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="Enter weight in Kg"
+        android:inputType="textPersonName"
+        android:textColor="@color/design_default_color_background"
+        android:textColorHint="@color/design_default_color_background"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:background="@color/cardview_dark_background"
+        android:onClick="calcbmi"
+        android:text="Check "
+        android:textColor="@color/design_default_color_background"
+        android:textColorHint="@color/design_default_color_background"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:singleLine="false"
+        android:text="BMI Calculator"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="YOUR BMI"
+        android:textColor="@color/design_default_color_background"
+        android:textColorHint="@color/design_default_color_background"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textViewtwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="YOUR RESULT"
+        android:textColor="@color/design_default_color_background"
+        android:textColorHint="@color/design_default_color_background"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
